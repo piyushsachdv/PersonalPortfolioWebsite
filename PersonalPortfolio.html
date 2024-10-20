@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #35424a;
+            color: #ffffff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            color: #ffffff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        section {
+            padding: 20px;
+            margin: 20px;
+            background: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #35424a;
+        }
+        .projects, .skills {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .project, .skill {
+            flex: 1 1 30%;
+            margin: 10px;
+            padding: 20px;
+            background: #e2e2e2;
+            border-radius: 5px;
+            text-align: center;
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background: #35424a;
+            color: #ffffff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        form input, form textarea {
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        form button {
+            background: #35424a;
+            color: #ffffff;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        form button:hover {
+            background: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>My Portfolio</h1>
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>Hello! I'm a passionate web developer with a knack for creating dynamic and responsive web applications. I love coding and continuously learning new technologies to improve my skills.</p>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+        <div class="project">
+            <h3>Project One</h3>
+            <p>A brief description of project one. It's an awesome project that does amazing things!</p>
+        </div>
+        <div class="project">
+            <h3>Project Two</h3>
+            <p>A brief description of project two. It's a fantastic project that solves many problems!</p>
+        </div>
+        <div class="project">
+            <h3>Project Three</h3>
+            <p>A brief description of project three. It's a groundbreaking project that changes the way we think!</p>
+        </div>
+    </div>
+</section>
+
+<section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+        <div class="skill">
+            <h3>HTML</h3>
+            <p>Expert in building structured and semantic web pages.</p>
+        </div>
+        <div class="skill">
+            <h3>CSS</h3>
+            <p>Proficient in styling web pages and creating responsive designs.</p>
+        </div>
+        <div class="skill">
+            <h3>JavaScript</h3>
+            <p>Skilled in adding interactivity and dynamic behavior to web applications.</p>
+        </div>
+        <div class="skill">
+            <h3>React</h3>
+            <p>Experienced in building user interfaces with React.js.</p>
+        </div>
+        <div class="skill">
+            <h3>Node.js</h3>
+            <p>Knowledgeable in server-side development using Node.js.</p>
+        </div>
+        <div class="skill">
+            <h3>Python</h3>
+            <p>Proficient in backend development and scripting with Python.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact Me</h2>
+    <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
